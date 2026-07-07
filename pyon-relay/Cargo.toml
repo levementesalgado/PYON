@@ -1,0 +1,19 @@
+[package]
+name = "pyon-relay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyon-core = { path = "../pyon-core" }
+tokio = { version = "1", features = ["full"] }
+rmp-serde = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_bytes = "0.11"
+hex = "0.4"
+ed25519-dalek = "2"
+sha2 = "0.10"
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
